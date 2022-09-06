@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+main div {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    animation: mover 1s linear infinite;
+}
+
+#box1 {
+    animation-delay: 0ms;
+    background-color: black;
+}
+
+#box2 {
+    animation-delay: 400ms;
+    background-color: blueviolet;
+}
+
+#box3 {
+    animation-delay: 800ms;
+    background-color: chocolate;
+}
+
+@keyframes mover {
+    from {
+        top: -50px;
+    }
+    50% {
+        top: 50px;
+    }
+    to {
+        top: -50px;
+    }
+}

@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    
+
+    transition: all .4s;
+    animation: mover 3s ease-in-out 1 forwards;
+}
+
+@keyframes mover {
+    from {
+        left: 0;
+        top: 0;
+    }
+    to {
+        top: -325px;
+        left: -700px;
+        width: 70px;
+        height: 70px;
+    }
+}

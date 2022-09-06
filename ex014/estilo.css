@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+main div {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+
+    position: relative;
+    transition: all 400ms;
+}
+
+.box1 {
+    background-color: rgb(242, 200, 32);
+}
+
+.box1:hover {
+    border-radius: 0;
+    height: 100px;
+    background-color: rgb(103, 85, 12);
+}

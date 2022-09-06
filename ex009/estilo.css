@@ -1,0 +1,30 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    background-color: rgb(68, 22, 68);
+    transition: all .4s;
+    animation: pulsar 1s ease-in infinite;
+}
+
+@keyframes pulsar {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.35);
+        background-color: rgb(142, 39, 155);
+    }
+    to {
+        transform: scale(1);
+    }
+}

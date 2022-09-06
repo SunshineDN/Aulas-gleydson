@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+main div {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+
+    position: relative;
+    transition: all 400ms;
+    animation: quicar 3s linear 1;
+
+}
+
+.box1 {
+    background-color: rgb(32, 203, 242);
+}
+
+@keyframes quicar {
+    0% {
+        left: 0;
+    }
+    14.2% {
+        left: 500px;
+    }
+    28.4% {
+        left: 250px;
+    }
+    42.6% {
+        left: 500px;
+    }
+    56.8% {
+        left: 250px;
+    }
+    71% {
+        left: 500px;
+    }
+    100% {
+        left: 0px;
+    }
+}

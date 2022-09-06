@@ -1,0 +1,52 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    background-color: rgb(107, 65, 141);
+    transition: all .4s;
+
+    animation: rotacionar-rainbow 5s ease-out infinite;
+}
+
+@keyframes rotacionar-rainbow {
+    from {
+        transform: rotate(45deg);
+        background-color: black;
+    }
+    14.2% {
+        transform: rotate(90deg);
+        background-color: aqua;
+    }
+    28.4% {
+        transform: rotate(135deg);
+        background-color: blueviolet;
+    }
+    42.6% {
+        transform: rotate(180deg);
+        background-color: cadetblue;
+    }
+    56.8% {
+        transform: rotate(225deg);
+        background-color: chocolate;
+    }
+    71% {
+        transform: rotate(270deg);
+        background-color: crimson;
+    }
+    85.2% {
+        transform: rotate(315deg);
+        background-color: darkgoldenrod;
+    }
+    to {
+        transform: rotate(360deg);
+        background-color: lawngreen;
+    }
+}

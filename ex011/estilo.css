@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+
+    transition: all .4s;
+    animation: mover 2s linear infinite;
+}
+
+@keyframes mover {
+    from {
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(1, 1, 98);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
